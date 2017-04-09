@@ -1,0 +1,9 @@
+#set($inputRoot = $input.path('$'))
+{
+  "TableName": "sample",
+  "Item": {
+    "primary_key": {
+      "S": "${inputRoot.key}"
+    }
+  }
+}
